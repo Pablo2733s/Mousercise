@@ -1,0 +1,17 @@
+h1 {
+    background-color: rgb(53, 238, 222);
+}
+
+body {
+    background-color: lightcyan;
+}s
+.Botao{
+    display: none;
+}
+.Novo {
+    display: block;
+    margin: auto;
+}
+h3{
+    text-align: center;
+}

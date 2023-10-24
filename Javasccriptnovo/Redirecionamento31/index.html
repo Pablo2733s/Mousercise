@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mouse</title>
+<style>
+.Imagens {
+    float: right;
+    margin-right: 500px;
+    margin-top: -140px;
+}
+header {
+    background-color: rgb(53, 238, 222);
+}
+
+body {
+    background-color: lightcyan;
+}
+
+.texto {
+    text-align: center;
+}
+.continue-button {
+    text-align: center;
+    margin-top: 20px; /* Espaço para alinhar o botão no centro verticalmente */
+    display: none;
+}
+.continue-button button {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<header><h1>Mousercise</h1></header>
+<p>
+    Escolha um alimento nos botões de opção abaixo e clique no botão
+    "Continuar".
+</p>
+<p class="texto"><input type="radio" name="personagem" value="satoru" onclick="exibirBotaoContinue('satoru')" />French Fries</p>
+<p class="texto"><input type="radio" name="personagem" value="megumi" onclick="exibirBotaoContinue('megumi')" />Onion Rings</p>
+<p class="texto"><input type="radio" name="personagem" value="nobara" onclick="exibirBotaoContinue('nobara')" />Cole Slaw</p>
+<p class="texto"><input type="radio" name="personagem" value="yuji" onclick="exibirBotaoContinue('yuji')" />Pickles</p>
+<div class="Imagens">
+    <img src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/fries.jpg" id="satoru-img" style="display: none;" onclick="exibirBotaoContinue('satoru')" />
+    <img src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/onion-rings.jpg" id="megumi-img" style="display: none;" onclick="exibirBotaoContinue('megumi')" />
+    <img src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/coleslaw.jpg" id="nobara-img" style="display: none;" onclick="exibirBotaoContinue('nobara')" />
+    <img src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/pickles.jpg" id="yuji-img" style="display: none;" onclick="exibirBotaoContinue('yuji')" />
+</div>
+<div class="continue-button" id="continueButton">
+    <button style="color: green; background-color: aquamarine; margin-left: 890px;"><a href="/Redirecionamento32/">Continue</a></button>
+</div>
+<script>
+function exibirBotaoContinue(selectedValue) {
+    const continueButton = document.getElementById('continueButton');
+    continueButton.style.display = 'block';
+    const images = document.querySelectorAll('img');
+    images.forEach((img) => {
+        img.style.display = 'none';
+    });
+    const selectedImage = document.getElementById(selectedValue + '-img');
+    if (selectedImage) {
+        selectedImage.style.display = 'block';
+    }
+}
+let contador = 0 
+const html = document.querySelector("html")
+html.addEventListener("click", contarclicks)
+function contarclicks() {
+    contador++
+    localStorage.setItem("click31",contador  )
+
+}
+</script>
+</body>
+</html>

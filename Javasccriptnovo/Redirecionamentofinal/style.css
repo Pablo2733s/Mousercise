@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h2 {
+    background-color: lightblue;
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.Certificado2 {
+    background-color: gainsboro;
+    color: rgb(26, 96, 121);
+    height: 400px;
+    width: 900px;
+    margin: auto;
+    display: block
+}

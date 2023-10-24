@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse</title>
+    <style>
+      header {
+        background-color: rgb(53, 238, 222);
+      }
+
+      body {
+        background-color: lightcyan;
+      }
+      .visivel {
+        display: block;
+      }
+      .invi {
+        display: none;
+      }
+      #finalbutton34 {
+        margin-left: 890px;
+      }
+      p {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Rato</h1></header>
+    <div id="34">
+      <p style="text-align: center">
+        A caixa branca abaixo é uma scroll list. Use a scroll bar no lado
+        direito da list box através das opções disponíveis. Clique na opção e
+        selecione-a.
+      </p>
+      <p style="text-align: center">
+        Selecione um cla (Aburame), e continue logo apos. 
+      </p>
+      <select
+        style="display: block; margin-left: auto; margin-right: auto"
+        name="select3"
+        id="s3"
+        multiple
+        size="4"
+        onclick="validation3()"
+      >
+        <option value="jan">Uchiha</option>
+        <option value="fev">Namikaze</option>
+        <option value="set">Uzumaki</option>
+        <option value="out">hatake</option>
+        <option value="nov">Hiyuga</option>
+        <option value="dez">Aburame</option>
+      </select>
+      <p>
+        <a href="/Pagina36/index.html">
+          <img
+            onclick="prox34()"
+            class="invi"
+            id="finalbutton34"
+            src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/continue.gif"
+            alt="botao"
+        /></a>
+      </p>
+    </div>
+    <script>
+      function validation3() {
+        if (document.getElementById("s3").value == "dez")
+          document
+            .getElementById("finalbutton34")
+            .setAttribute("class", "visivel");
+      }
+ 
+      function prox34() {
+        document.getElementById("34").setAttribute("class", "invi");
+        document.getElementById("35").setAttribute("class", "visivel");
+      }
+      let contador = 0 
+const html = document.querySelector("html")
+html.addEventListener("click", contarclicks)
+function contarclicks() {
+    contador++
+    localStorage.setItem("click35",contador  )
+
+}
+    </script>
+  </body>
+</html>

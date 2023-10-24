@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse</title>
+    <style>
+      header {
+    background-color: rgb(53, 238, 222);
+}
+body {
+    background-color: lightcyan;
+}
+      .visivel {
+        display: block;
+      }
+      .invi {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Mousercise</h1></header>
+    <div id="32">
+      <p style="text-align: center">
+        The little white box below is a drop-down list. Click it to open
+        the list of options, then click on the desired option.
+      </p>
+    <p style="text-align: center">
+        Select the "Naruto" option, then click the button to
+       Continue.
+      </p>
+      <br />
+      <select name="select1" id="s1" onclick="validation()">
+        <option value="so1">Kushina</option>
+        <option value="so2">Hashirama</option>
+        <option value="so3">Sasuke</option>
+        <option value="so4" id="valid1">Naruto</option>
+      </select>
+      <p>
+        <a href="/Redirecionamento33/"><img
+          onclick="prox32()"
+          class="invi"
+          id="finalbutton32"
+          src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/continue.gif"
+          alt="botao"
+        /></a>
+    </p>
+    </div>
+    <script>
+      function validation() {
+        if (document.getElementById("s1").value == "so4")
+          document
+            .getElementById("finalbutton32")
+            .setAttribute("class", "visivel");
+      }
+     function prox32() {
+        document.getElementById("32").setAttribute("class", "invi");
+        document.getElementById("33").setAttribute("class", "visivel");
+      }
+      let contador = 0 
+const html = document.querySelector("html")
+html.addEventListener("click", contarclicks)
+function contarclicks() {
+    contador++
+    localStorage.setItem("click32",contador  )
+
+}
+    </script>
+ </body>
+</html>

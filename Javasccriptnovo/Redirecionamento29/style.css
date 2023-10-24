@@ -1,0 +1,54 @@
+h1 {
+    background-color: rgb(53, 238, 222);
+}
+
+body {
+    background-color: lightcyan;
+}
+div.lego{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+img.lego{
+    grid-column: 3;
+    grid-row: 1;
+    width: 400px;
+    margin-top: 18px;
+}
+
+.lego_cabelo{
+    width: 200px;
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 45px;
+    display: none;
+}
+.lego_scalibur{
+    width: 200px;
+    grid-column: 3;
+    margin-top: 50px;
+    margin-left: 90px;
+    display: none;
+}
+
+.lego_escudo{
+    width: 130px;
+    grid-column: 4;
+    margin-top: 20px;
+    margin-left: 40px;
+    grid-row: 2;
+    display: none;
+
+}
+
+.lego_nuvem{
+    width: 200px;
+    grid-column: 3;
+    grid-row: 3;
+    margin-top: 30px;
+    margin-left: 100px;
+    display: none;
+
+}

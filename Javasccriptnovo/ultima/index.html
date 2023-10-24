@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Table finish</h2>
+
+<table>
+  <tr>
+    <th style="text-align: center;">Clicks</th>
+    <th style="text-align: center;">Numeros Esperados</th>
+    <th style="text-align: center;">Numeros realizados</th>
+  </tr>
+  <tr>
+    <td id="clicks"></td>
+    <td id="numerosEsperados">
+    </td>
+    <td id="numerosRealizados"></td>
+  </tr>
+</table>
+
+<script>
+document.getElementById("clicks").innerHTML = localStorage.getItem("click1");
+document.getElementById("numerosEsperados").innerHTML = localStorage.getItem("numerosEsperados");
+document.getElementById("numerosRealizados").innerHTML = localStorage.getItem("numerosRealizados");
+</script>
+
+</body>
+</html>

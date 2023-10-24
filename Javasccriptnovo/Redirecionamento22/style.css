@@ -1,0 +1,14 @@
+h1 {
+    background-color: rgb(53, 238, 222);
+}
+
+body {
+    background-color: lightcyan;
+}
+
+p {
+    font-size: 20px;
+}
+.Botao{
+    display: none;
+}

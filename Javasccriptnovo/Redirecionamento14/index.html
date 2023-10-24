@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Incial</title>
+</head>
+<body>
+    <header>
+        <h1>Mousercise</h1>
+        <hr>
+    </header>
+
+    <div class="Paginanova">
+        <p>Many times you will have to click on buttons, which can appear in many different styles. Click the button below to continue.
+        </p>
+        <a href="/redirecionamento15/">
+        <button style="color: white; background-color: blue; border-radius: 20px; padding: 5px; margin: auto; display: block; margin-top: 270px;">Click me!</button></a>
+    </div>
+    <p class="Novo2"></p>
+
+    <script> let contador = 0 
+        const html = document.querySelector("html")
+        html.addEventListener("click", contarclicks)
+        function contarclicks() {
+            contador++
+            localStorage.setItem("click14",contador  )
+        
+        }
+    </script>
+
+</body>
+</html>

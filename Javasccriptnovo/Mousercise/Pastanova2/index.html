@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bem-vindo</title>
+</head>
+<body>
+    <header class="mouserCise">
+        <h1>Mousercise</h1>
+    </header>
+
+    <div class="div">
+        <div class="text">
+            Reta final
+        </div>
+        <br>
+        <p>Bem-vindo, <span id="nome"></span> <span id="sobrenome"></span>!</p>
+        <br>
+        Pratique suas habilidades de copiar e colar...
+    </div>
+
+    <hr style="margin-top: 10px; margin-bottom: 10px">
+
+    <table class="margin">
+        <tbody>
+            <tr>
+                <th width="130" align="left">&nbsp;&nbsp;&nbsp;Respostas:</th>
+                <th colspan="3" align="left">Questões:</th>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;naruto</td>
+                <td>1- Quem é o sétimo hokage?</td>
+                <td>
+                    <input type="text" id="input1" resposta-correta="naruto">
+                    <button onclick="verificarResposta(1, 'naruto')">Verificar</button>
+                    <p align="center" style="color: green; display: none;">Certa resposta</p>
+                    <p align="center" style="color: red; display: none;">Resposta errada</p>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;Shikamaru</td>
+                <td>2- Quem destruiu Konoha?</td>
+                <td>
+                    <input type="text" id="input2" resposta-correta="nagato">
+                    <button onclick="verificarResposta(2, 'nagato')">Verificar</button>
+                    <p align="center" style="color: green; display: none;">Certa resposta</p>
+                    <p align="center" style="color: red; display: none;">Resposta errada</p>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;Nagato</td>
+                <td>3- Quem é o atual hokage?</td>
+                <td>
+                    <input type="text" id="input3" resposta-correta="shikamaru">
+                    <button onclick="verificarResposta(3, 'shikamaru')">Verificar</button>
+                    <p align="center" style="color: green; display: none;">Certa resposta</p>
+                    <p align="center" style="color: red; display: none;">Resposta errada</p>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;Jiraya</td>
+                <td>4- Quem é o otsutsuki que aparece no final de Naruto Shipuden?</td>
+                <td>
+                    <input type="text" id="input4" resposta-correta="kaguya">
+                    <button onclick="verificarResposta(4, 'kaguya')">Verificar</button>
+                    <p align="center" style="color: green; display: none;">Certa resposta</p>
+                    <p align="center" style="color: red; display: none;">Resposta errada</p>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;Kaguya</td>
+                <td>5- Quem ensinou o Rasengan a Naruto?</td>
+                <td>
+                    <input type="text" id="input5" resposta-correta="jiraya">
+                    <button onclick="verificarResposta(5, 'jiraya')">Verificar</button>
+                    <p align="center" style="color: green; display: none;">Certa resposta</p>
+                    <p align="center" style="color: red; display: none;">Resposta errada</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/Redirecionamentofinal/index.html">
+        <img id="imagemCerta" class=nevv style="display: none; margin-left: 400px;" src="/continue.gif" alt="">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

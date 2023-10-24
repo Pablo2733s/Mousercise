@@ -1,0 +1,24 @@
+h1 {
+    background-color: rgb(53, 238, 222);
+}
+
+body {
+    background-color: lightcyan;
+}
+.Novo {
+    display: none;
+}
+img {
+    width: 900px;
+    height: 600px;
+}
+
+.Kuraminha {
+    margin-top: 50px;
+}
+
+.Kurama {
+    width: 250px;
+    height: 250px;
+    margin-left: 2000px;
+}

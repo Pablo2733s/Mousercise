@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mousercise</h1>
+        <hr>
+        <p>Se você deseja a pizza sem recheio aperte em continuar, caso contrário, escolha o recheio logo abaixo:</p>
+<div class="lego">
+    <form>
+        <input class="checkbox" type="checkbox" onclick="click1()" >
+        <label>peperoni</label><br>
+        <input class="checkbox1" type="checkbox" onclick="click2()" >
+        <label>espada</label><br>
+        <input class="checkbox2" type="checkbox" onclick="click3()" >
+        <label>escudo</label><br>
+        <input class="checkbox3" type="checkbox" onclick="click4()" >
+        <label>nuvem</label><br>
+       <button class="pag30" type="button" onclick="mudar()">continue</button>
+    </form>
+
+    <img class="lego" src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/pizza.png">
+    <img class="lego_cabelo" src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/mushrooms-overlay.png">
+    <img class="lego_scalibur" src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/onions-overlay.png">
+    <img class="lego_escudo" src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/green-peppers-overlay.png">
+    <img class="lego_nuvem" src="http://mnl.mclinc.org/wp-content/uploads/ComputerLab/Mousercise2.0/images/pepperoni-overlay.png">
+</div>
+
+<script>
+function mudar() {
+    window.location.href = "/Redirecionamento30/index.html";
+}
+
+function click1() {
+    var checkbox = document.querySelector('.checkbox');
+    var imagemCabelo = document.querySelector('.lego_cabelo');
+    var botao = document.querySelector('.pag30');
+
+    if (checkbox.checked) {
+        imagemCabelo.style.display = 'block';
+        botao.style.display = 'block';
+        
+    } else {
+        imagemCabelo.style.display = 'none';
+    }
+}
+
+function click2() {
+    var checkbox = document.querySelector('.checkbox1');
+    var imagemCabelo = document.querySelector('.lego_scalibur');
+    var botao = document.querySelector('.pag30');
+
+    if (checkbox.checked) {
+        imagemCabelo.style.display = 'block';
+        botao.style.display = 'block';
+    } else {
+        imagemCabelo.style.display = 'none';
+    }
+}
+
+function click3() {
+    var checkbox = document.querySelector('.checkbox2');
+    var imagemCabelo = document.querySelector('.lego_escudo');
+    var botao = document.querySelector('.pag30');
+
+    if (checkbox.checked) {
+        imagemCabelo.style.display = 'block';
+        botao.style.display = 'block';
+    } else {
+        imagemCabelo.style.display = 'none';
+    }
+}
+
+function click4() {
+    var checkbox = document.querySelector('.checkbox3');
+    var imagemCabelo = document.querySelector('.lego_nuvem');
+    var botao = document.querySelector('.pag30');
+
+    if (checkbox.checked) {
+        imagemCabelo.style.display = 'block';
+        botao.style.display = 'block';
+    } else {
+        imagemCabelo.style.display = 'none';
+    }
+}
+
+let contador = 0 
+const html = document.querySelector("html")
+html.addEventListener("click", contarclicks)
+function contarclicks() {
+    contador++
+    localStorage.setItem("click29",contador  )
+
+}
+</script>
+</body>
+</html>

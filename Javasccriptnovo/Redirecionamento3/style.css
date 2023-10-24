@@ -1,0 +1,23 @@
+.Paginanova {
+    float: right;
+    margin-left: -160px;
+}
+
+.Novo2 {
+    float: right;
+    margin-top: 90px;
+}
+
+
+img {
+    margin-top: -15px
+}
+h1 {
+    background-color: rgb(53, 238, 222);
+    font-size: 40px;
+    
+}
+
+body {
+    background-color: lightcyan;
+}

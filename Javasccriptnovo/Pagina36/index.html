@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rato</title>
+    <style>
+      header {
+        background-color: rgb(53, 238, 222);
+      }
+      body {
+        background-color: lightcyan;
+      }
+      input {
+        border-radius: 5px;
+      }
+      button {
+        background-color: blue;
+        color: black;
+      }
+      p {
+        font-size: large;
+      }
+    </style>
+<script>
+  function passarValores() {
+    var nome = document.getElementById("nome").value;
+    var sobrenome = document.getElementById("sobrenome").value;
+    var url =
+      "/Mousercise/Pastanova2/index.html?nome=" +
+      encodeURIComponent(nome) +
+      "&sobrenome=" +
+      encodeURIComponent(sobrenome);
+    window.location.href = url;
+    return false;
+  }
+  let contador = 0 
+const html = document.querySelector("html")
+html.addEventListener("click", contarclicks)
+function contarclicks() {
+    contador++
+    localStorage.setItem("click36",contador  )
+
+}
+</script>
+
+    </script>
+  </head>
+  <body>
+    <header><h1>Rato</h1></header>
+    <div class="text">
+      <p>
+        As finas caixas brancas abaixo são caixas de texto. Clique na primeira
+        caixa com o mouse e digite seu primeiro nome. Em seguida, clique dentro
+        da segunda caixa e digite seu sobrenome. <br /><br />Quando terminar,
+        clique no botão 'Enviar'.
+      </p>
+    </div>
+
+    <div class="form-container">
+      <h2></h2>
+
+      <form action="/Mousercise/Pastanova2/index.html" method="get" onsubmit="return passarValores()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="form-input" required />
+        <label for="sobrenome">Sobrenome:</label>
+        <input
+          type="text"
+          id="sobrenome"
+          name="sobrenome"
+          class="form-input"
+          required
+        />
+        <input type="submit" value="Enviar" class="form-button" />
+      </form>
+    </div>
+  </body>
+</html>
